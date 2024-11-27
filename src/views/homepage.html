@@ -3,18 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Filmoteca</title>
+    <title>Filmoteca - Accueil</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to Filmoteca</h1>
+        <nav class="navbar">
+            <div class="container">
+                <a href="/" class="logo">Filmoteca</a>
+                <ul class="nav-links">
+                    <li><a href="/">Accueil</a></li>
+                    <li><a href="/films">Films</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
+
     <main>
-        <p>Your content goes here.</p>
+        <section class="hero">
+            <div class="container">
+                <h1>Bienvenue sur Filmoteca</h1>
+                <p>Gérez vos films facilement grâce à notre application intuitive.</p>
+                <a href="/films" class="btn">Voir la liste des films</a>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="container">
+                <h2>À propos de Filmoteca</h2>
+                <p>Filmoteca est une application de gestion de films développée pour simplifier l'organisation de vos collections. 
+                   Ce projet utilise l'architecture MVC et Docker pour un déploiement rapide et efficace.</p>
+            </div>
+        </section>
     </main>
+
     <footer>
-        <p>&copy; 2023 Filmoteca. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 Filmoteca. Tous droits réservés.</p>
+        </div>
     </footer>
 </body>
 </html>

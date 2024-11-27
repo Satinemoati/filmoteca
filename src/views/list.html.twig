@@ -1,0 +1,17 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}Liste des Films{% endblock %}
+
+{% block body %}
+    <h1>Liste des Films</h1>
+    <ul>
+        {% for film in films %}
+            <li>
+                <strong>{{ film.title }}</strong> - {{ film.year }}
+                <p>{{ film.synopsis }}</p>
+                <p>Réalisateur : {{ film.director }}</p>
+                <p>Ajouté le : {{ film.created_at|date("d/m/Y") }}</p>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
